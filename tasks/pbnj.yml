@@ -1,0 +1,5 @@
+---
+- hosts: pbnj
+  tasks:
+   - name: Update Software
+     apt: pkg=nginx state=installed update_cache=true
